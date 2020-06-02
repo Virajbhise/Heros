@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>about me </title>
+ <link rel="stylesheet" href="style.css">  
+</head>
+    <body>
+        <div class="container">
+            <div class="navigation">
+                <div class="leftside">
+                        <div class="navwrapper">
+                            <a href="index.html">Home</a>
+                         </div>
+                        <div class="navwrapper">
+                           <a href="about.html">About</a>
+                         </div>
+                 </div> 
+                  
+                
+                  <div class="rightside">  
+                    <div class="brand"> 
+                     <div>virajtechguy</div>  
+                    </div> 
+                  </div> 
+        
+            </div>
+            <div class="contentwrapper">
+                <div class="portfolio-items-wrapper">
+
+                    <div class="portfolio-item-wrapper">
+                   
+                     <div class= "portfolio-img-back" style="background-image:url(images/batman.jpg)"></div>
+                     <div class="image-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/dcc1.png" alt="">
+                        </div>
+                        <div class="subtitle">
+                            It's not who I am underneath, but what I do that defines me
+                        </div>
+                    </div>
+                    </div>
+                    <div class="portfolio-item-wrapper">
+                   
+                            <div class= "portfolio-img-back" style="background-image:url(images/aquaman.jpg)"></div>
+                           <div class="image-text-wrapper">
+                               <div class="logo-wrapper">
+                                   <img src="images/logos/dcc2.png" alt="">
+                               </div>
+                               <div class="subtitle">
+                                   Put two ships in the open sea without wind or ride and they will come together
+                               </div>
+                           </div>
+                           </div>
+                           <div class="portfolio-item-wrapper">
+                   
+                                <div class= "portfolio-img-back" style="background-image:url(images/wonderwoman.jpg)"></div>
+                               <div class="image-text-wrapper">
+                                   <div class="logo-wrapper">
+                                       <img src="images/logos/dcc3.png" alt="">
+                                   </div>
+                                   <div class="subtitle">
+                                    If loss makes you doubt your belief in justice, then you never truly believed in justice at all
+
+                                   </div>
+                               </div>
+                               </div>
+                               <div class="portfolio-item-wrapper">
+                   
+                                    <div class= "portfolio-img-back" style="background-image:url(images/superman.jpg)"></div>
+                                   <div class="image-text-wrapper">
+                                       <div class="logo-wrapper">
+                                           <img src="images/logos/dcc4.png" alt="">
+                                       </div>
+                                       <div class="subtitle">
+                                        With great power comes great responsibility
+                                       </div>
+                                   </div>
+                                   </div>
+                                   <div class="portfolio-item-wrapper">
+                   
+                                        <div class= "portfolio-img-back" style="background-image:url(images/flash.jpg)"></div>
+                                       <div class="image-text-wrapper">
+                                           <div class="logo-wrapper">
+                                               <img src="images/logos/dcc5.png" alt="">
+                                           </div>
+                                           <div class="subtitle">
+                                            Sometimes the only way to move forward is to revisit the things in your past that were holding you back
+
+                                           </div>
+                                       </div>
+                                       </div>         
+                                       <div class="portfolio-item-wrapper">
+                   
+                                            <div class= "portfolio-img-back" style="background-image:url(images/greenlantern.jpg)"></div>
+                                           <div class="image-text-wrapper">
+                                               <div class="logo-wrapper">
+                                                   <img src="images/logos/dcc6.png" alt="">
+                                               </div>
+                                               <div class="subtitle">
+                                                In brightest day, in blackest night, no evil shall escape my sight. Let those who worship evil's might, beware my power
+                                               </div>
+                                           </div>
+                                           </div>
+              </div>
+            </div>
+        </div>
+    </body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+    
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        portfolioItem.addEventListener('mouseout', () => {
+            
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    }
+      )   
+</script>
+</html>
